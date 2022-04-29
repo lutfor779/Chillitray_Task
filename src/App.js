@@ -1,11 +1,18 @@
-import { Button } from "antd";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
+import Home from "./pages/home";
+import NotFound from "./pages/notFound";
 
 function App() {
 	return (
 		<div className="App">
-			<p className="bg-red-500 text-3xl">Hello</p>
-			<Button type="primary">Button</Button>
+			<BrowserRouter>
+				<Routes>
+					<Route path="/" element={<Home />} />
+
+					<Route path="*" element={<NotFound />} />
+				</Routes>
+			</BrowserRouter>
 		</div>
 	);
 }
