@@ -1,23 +1,32 @@
 import { Layout } from "antd";
 import React from "react";
 import Header from "../Shared/Header";
+import Menu from "../Shared/Menu";
 
-const { Content } = Layout;
+const { Content, Sider } = Layout;
 
 const HomeLayout = (props) => {
 	return (
 		<Layout>
 			<Header />
-			<Layout>
-				<Content
-					style={{
-						overflow: "initial",
-						minHeight: "90vh",
-						background: "white",
-					}}
+			<Layout className="bg-white">
+				<Sider
+					width={243}
+					style={{ backgroundColor: "white", marginTop: "1rem" }}
 				>
-					{props.children}
-				</Content>
+					<Menu />
+				</Sider>
+				<Layout>
+					<Content
+						style={{
+							overflow: "initial",
+							minHeight: "90vh",
+							background: "white",
+						}}
+					>
+						{props.children}
+					</Content>
+				</Layout>
 			</Layout>
 		</Layout>
 	);
