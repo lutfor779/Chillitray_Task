@@ -9,19 +9,27 @@ const HomeLayout = (props) => {
 	return (
 		<Layout>
 			<Header />
+
 			<Layout className="bg-white">
-				<Sider
-					width={243}
-					style={{ backgroundColor: "white", marginTop: "1rem" }}
-				>
-					<Menu />
-				</Sider>
-				<Layout>
+				<div className="w-64 xl:w-80 hidden lg:block">
+					<Sider
+						width={243}
+						style={{
+							backgroundColor: "white",
+							marginTop: "1.5rem",
+						}}
+					>
+						<Menu />
+					</Sider>
+				</div>
+
+				<Layout className="bg-white">
 					<Content
 						style={{
 							overflow: "initial",
 							minHeight: "90vh",
 							background: "white",
+							margin: "1.5rem 2rem",
 						}}
 					>
 						{props.children}

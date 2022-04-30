@@ -1,6 +1,7 @@
 import { MenuOutlined } from "@ant-design/icons";
 import { Drawer } from "antd";
 import React, { useState } from "react";
+import Menu from "../Menu";
 
 const Header = () => {
 	const [visible, setVisible] = useState(false);
@@ -120,6 +121,7 @@ const Header = () => {
 					</div>
 				</div>
 
+				{/* Menu Icon */}
 				<div className="sm:hidden block">
 					<MenuOutlined
 						className="text-xl mb-2 text-black hover:text-indigo-500"
@@ -145,15 +147,7 @@ const Header = () => {
 						visible={visible}
 						width={280}
 					>
-						<div>
-							<div className="flex text-gray-600 justify-around flex-col">
-								<p>Feed</p>
-								<p>Dashboard</p>
-								<p>Lookup</p>
-								<p>List</p>
-								<p>Team</p>
-							</div>
-						</div>
+						<Menu />
 					</Drawer>
 				</div>
 			</div>
