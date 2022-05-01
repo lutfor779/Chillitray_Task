@@ -20,7 +20,7 @@ const Menu = () => {
 				<ul>
 					<li>
 						<a
-							className="flex items-center text-sm py-4 pl-8 h-12 text-gray-700  hover:text-violet-600 hover:bg-violet-50 font-normal focus:font-bold focus:text-violet-600 focus:bg-violet-50 active:font-bold active:text-violet-600 active:bg-violet-50 transition duration-300 ease-in-out rounded-r-full relative"
+							className="flex items-center text-sm py-4 pl-8 h-12 text-violet-600 bg-violet-50 hover:text-violet-600 hover:bg-violet-50 font-bold focus:font-bold focus:text-violet-600 focus:bg-violet-50 active:font-bold active:text-violet-600 active:bg-violet-50 transition duration-300 ease-in-out rounded-r-full relative"
 							href="#!"
 						>
 							<Hot className="mr-4" />

@@ -8,10 +8,10 @@ const Home = () => {
 	return (
 		<HomeLayout>
 			<Row gutter={24}>
-				<Col xs={24} md={16} xxl={18} className="bg-blue-50">
+				<Col xs={24} xl={16} xxl={18}>
 					<Content />
 				</Col>
-				<Col xs={0} md={8} xxl={6}>
+				<Col xs={0} xl={8} xxl={6}>
 					<Aside />
 				</Col>
 			</Row>
