@@ -15,7 +15,7 @@
 		/>
 		<path
 			d="M5.91577 6.66602L8.63535 9.33268L11.3549 6.66602"
-			stroke="#5D5FEF"
+			stroke="currentColor"
 			stroke-width="2"
 			stroke-linecap="round"
 			stroke-linejoin="round"
